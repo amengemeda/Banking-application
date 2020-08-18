@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="658.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.application.TransferController">
+   <children>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="42.0" prefHeight="31.0" prefWidth="122.0" text="Transfer" textFill="#7c230d">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="115.0" prefHeight="32.0" prefWidth="94.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="166.0" prefHeight="32.0" prefWidth="94.0" text="Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="229.0" prefHeight="32.0" prefWidth="188.0" text="Reciever Acc Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="291.0" prefHeight="32.0" prefWidth="94.0" text="Sign">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amount" layoutX="351.0" layoutY="119.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="sign" layoutX="351.0" layoutY="295.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="receiver" layoutX="351.0" layoutY="233.0" prefHeight="25.0" prefWidth="188.0" />
+      <DatePicker fx:id="date" layoutX="351.0" layoutY="170.0" prefHeight="25.0" prefWidth="188.0" />
+      <Button fx:id="transfer" layoutX="300.0" layoutY="377.0" mnemonicParsing="false" onAction="#transferMoney" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #3393F1;" text="Transfer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="314.0" layoutY="431.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #F04E4E;" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="74.0" fitWidth="95.0" layoutX="538.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="600.0" style="-fx-background-color: #C5BFBD;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="bank.application.LoanController">
+   <children>
+      <Label alignment="CENTER" layoutX="252.0" layoutY="28.0" prefHeight="40.0" prefWidth="108.0" text="Loan" textFill="#b21515">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="116.0" layoutY="126.0" prefHeight="26.0" prefWidth="87.0" text="Amount">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="116.0" layoutY="216.0" prefHeight="26.0" prefWidth="87.0" text="Rate">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="116.0" layoutY="170.0" prefHeight="26.0" prefWidth="163.0" text="Payment Duration">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="113.0" layoutY="259.0" prefHeight="26.0" prefWidth="181.0" text="Total money to be paid">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="113.0" layoutY="306.0" prefHeight="26.0" prefWidth="181.0" text="Monthly Payment">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalAmount" alignment="CENTER" disable="true" layoutX="412.0" layoutY="259.0" prefHeight="26.0" prefWidth="149.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="rate" alignment="CENTER" disable="true" layoutX="412.0" layoutY="216.0" prefHeight="26.0" prefWidth="149.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlyPayment" alignment="CENTER" disable="true" layoutX="412.0" layoutY="306.0" prefHeight="26.0" prefWidth="149.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="request" layoutX="160.0" layoutY="417.0" mnemonicParsing="false" onAction="#requestLoan" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #4792E7;" text="Request Loan">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" disable="true" layoutX="113.0" layoutY="354.0" prefHeight="26.0" prefWidth="181.0" text="Submit Files">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" disable="true" layoutX="412.0" layoutY="354.0" prefHeight="26.0" prefWidth="149.0" text="file">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="duration" layoutX="412.0" layoutY="171.0" prefWidth="150.0" />
+      <TextField fx:id="amount" layoutX="413.0" layoutY="127.0" />
+      <ImageView fx:id="logo" fitHeight="74.0" fitWidth="95.0" layoutX="488.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="280.0" layoutY="475.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #FF4646;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="parseCondition" layoutX="341.0" layoutY="417.0" mnemonicParsing="false" onAction="#parseConditions" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #4792E7;" text="Parse Conditions">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

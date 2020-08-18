@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="622.0" style="-fx-background-color: #C5BFBD;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="bank.application.LoanPaymentController">
+   <children>
+      <Label alignment="CENTER" layoutX="263.0" layoutY="42.0" prefHeight="36.0" prefWidth="110.0" text="Pay Loan" textFill="#c93030">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="119.0" prefHeight="27.0" prefWidth="94.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="174.0" prefHeight="27.0" prefWidth="172.0" text="Outstanding Balance">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="233.0" prefHeight="27.0" prefWidth="150.0" text="Monthly Payment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="284.0" prefHeight="27.0" prefWidth="94.0" text="Deadline">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="payB" layoutX="282.0" layoutY="354.0" mnemonicParsing="false" onAction="#pay" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #4792E7;" text="Pay">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="282.0" layoutY="416.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #DF3E2B;" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amount" layoutX="387.0" layoutY="120.0" prefHeight="25.0" prefWidth="172.0" />
+      <Label fx:id="outstandingBalance" alignment="CENTER" layoutX="387.0" layoutY="171.0" prefHeight="27.0" prefWidth="172.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlyPayment" alignment="CENTER" layoutX="387.0" layoutY="233.0" prefHeight="27.0" prefWidth="172.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="deadline" alignment="CENTER" layoutX="387.0" layoutY="284.0" prefHeight="27.0" prefWidth="172.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="94.0" layoutX="512.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

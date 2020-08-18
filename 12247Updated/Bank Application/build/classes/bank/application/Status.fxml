@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="699.0" style="-fx-background-color: #C5BFBD;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.application.StatusController">
+   <children>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="14.0" prefHeight="17.0" prefWidth="139.0" text="Status" textFill="#b51f1f">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="279.0" layoutY="71.0" prefHeight="31.0" prefWidth="114.0" text="Balance" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance" alignment="CENTER" layoutX="267.0" layoutY="113.0" prefHeight="17.0" prefWidth="139.0" text=";">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="160.0" prefHeight="21.0" prefWidth="105.0" text="Total Deposit" textFill="#0d11eb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="160.0" prefHeight="21.0" prefWidth="122.0" text="Total Withdraw" textFill="#d71f1f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalDeposit" alignment="CENTER" layoutX="56.0" layoutY="201.0" prefHeight="17.0" prefWidth="86.0" text="k">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalWithdraw" alignment="CENTER" layoutX="497.0" layoutY="201.0" prefHeight="17.0" prefWidth="86.0" text="k">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="235.0" prefHeight="38.0" prefWidth="105.0" text="Loan">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="285.0" prefHeight="32.0" prefWidth="122.0" text="Borrowed Money">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="324.0" prefHeight="32.0" prefWidth="114.0" text="Interest Rate">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="363.0" prefHeight="32.0" prefWidth="168.0" text="Total Amount to be paid">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="402.0" prefHeight="32.0" prefWidth="181.0" text="Money to be paid Monthly">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="442.0" prefHeight="32.0" prefWidth="114.0" text="Loan Duration ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="483.0" prefHeight="32.0" prefWidth="139.0" text="Total Amount Paid">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="borrowedMoney" alignment="TOP_LEFT" layoutX="410.0" layoutY="291.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="duration" alignment="TOP_LEFT" layoutX="410.0" layoutY="448.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlyPayment" alignment="TOP_LEFT" layoutX="410.0" layoutY="408.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalAmountToBePaid" alignment="TOP_LEFT" layoutX="410.0" layoutY="369.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="rate" alignment="TOP_LEFT" layoutX="410.0" layoutY="330.0" prefHeight="20.0" prefWidth="174.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountPaid" alignment="TOP_LEFT" layoutX="410.0" layoutY="489.0" prefHeight="20.0" prefWidth="174.0" text="Label" textFill="#2eab20">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="583.0" layoutY="604.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #DF3E2B;" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="98.0" layoutY="524.0" prefHeight="32.0" prefWidth="122.0" text="Remaining  Debt">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="remainingDebt" alignment="TOP_LEFT" layoutX="410.0" layoutY="530.0" prefHeight="20.0" prefWidth="174.0" text="Label" textFill="#ff0505">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="74.0" fitWidth="95.0" layoutX="561.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="160.0" prefHeight="21.0" prefWidth="114.0" text="Total Received" textFill="#0d11eb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="160.0" prefHeight="21.0" prefWidth="105.0" text="Total Sent" textFill="#d71f1f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalReceived" alignment="CENTER" layoutX="199.0" layoutY="201.0" prefHeight="17.0" prefWidth="86.0" text="k">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalSent" alignment="CENTER" layoutX="350.0" layoutY="201.0" prefHeight="17.0" prefWidth="86.0" text="k">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="566.0" prefHeight="32.0" prefWidth="114.0" text="Deadline date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="deadline" alignment="TOP_LEFT" layoutX="413.0" layoutY="572.0" prefHeight="20.0" prefWidth="254.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
