@@ -1,4 +1,3 @@
-# Bank application using Java
-Bank application.
-Windows application. 
-Using Java and Javafx 
+# Simple Banking application 
+
+A simple Window application implemented using Java and JavaFx
