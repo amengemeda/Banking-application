@@ -1,2 +1,4 @@
 # trial
-My first git hub repository 
+Bank application.
+Windows application. 
+Using Java and Javafx 
